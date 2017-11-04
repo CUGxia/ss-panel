@@ -12,9 +12,9 @@ $tomb = 1024*1024;
 $togb = $tomb*1024;
 //Define DB Connection  数据库信息
 define('DB_HOST','localhost');
-define('DB_USER','root');
-define('DB_PWD','xiading.1996');
-define('DB_DBNAME','ssr');
+define('DB_USER','localhost');
+define('DB_PWD','123');
+define('DB_DBNAME','ss');
 define('DB_CHARSET','utf8');
 define('DB_TYPE','mysql'); 
 /*
@@ -24,14 +24,14 @@ define('DB_TYPE','mysql');
 //define Plan
 //注册用户的初始化流量
 //默认5GiB
-$a_transfer = $togb*150;
+$a_transfer = $togb*0.5;
 
 //签到设置 签到话的的最低最高流量,单位MB
-$check_min = 0;
-$check_max = 0;
+$check_min = 50;
+$check_max = 300;
 
 //name
-$site_name = "CUG_SSR";
+$site_name = "SSR_CUGER";
 $site_url  = "http://ssr.cuger.cn";
 /**
  * 站点盐值，用于加密密码
@@ -49,8 +49,8 @@ $pwd_mode = 1;
 
 //用户注册后获得的邀请码最低最高
 //都设置为0用户就不能邀请
-$user_invite_min = '0';
-$user_invite_max = '0';
+$user_invite_min = '1';
+$user_invite_max = '1';
 
 
 //
