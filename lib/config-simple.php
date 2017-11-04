@@ -13,8 +13,8 @@ $togb = $tomb*1024;
 //Define DB Connection  数据库信息
 define('DB_HOST','localhost');
 define('DB_USER','root');
-define('DB_PWD','password');
-define('DB_DBNAME','db');
+define('DB_PWD','xiading.1996');
+define('DB_DBNAME','ssr');
 define('DB_CHARSET','utf8');
 define('DB_TYPE','mysql'); 
 /*
@@ -24,20 +24,20 @@ define('DB_TYPE','mysql');
 //define Plan
 //注册用户的初始化流量
 //默认5GiB
-$a_transfer = $togb*5;
+$a_transfer = $togb*150;
 
-//签到设置 签到活的的最低最高流量,单位MB
-$check_min = 1;
-$check_max = 100;
+//签到设置 签到话的的最低最高流量,单位MB
+$check_min = 0;
+$check_max = 0;
 
 //name
-$site_name = "ss-panel";
-$site_url  = "https://panel.com/";
+$site_name = "CUG_SSR";
+$site_url  = "http://ssr.cuger.cn";
 /**
  * 站点盐值，用于加密密码
  * 第一次安装请修改此值，安装后请勿修改！！否则会使所有密码失效，仅限加密方式不为1的时候有效
  */
-$salt = "ss-panel";
+$salt = "ssr-cug";
 /**
  * 密码加密方式，注意： 2.4以前的版本，请修改加密方式为「1」，否则会使密码失效！
  * 更多说明见wiki https://github.com/orvice/ss-panel/wiki/Install-Guide-zh_cn
@@ -49,8 +49,8 @@ $pwd_mode = 1;
 
 //用户注册后获得的邀请码最低最高
 //都设置为0用户就不能邀请
-$user_invite_min = '1';
-$user_invite_max = '1';
+$user_invite_min = '0';
+$user_invite_max = '0';
 
 
 //
@@ -60,7 +60,7 @@ $user_invite_max = '1';
 //mail-smtp
 $Selectmailservice = "mail-gun";
 //邮件发件人
-$sender = "xxx@xxx.xx";
+$sender = "xxxx@xxxx.com";
 
 //mail-gun
 // Get your key from https://mailgun.com
